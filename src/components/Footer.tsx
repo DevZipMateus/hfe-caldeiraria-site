@@ -8,11 +8,13 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img
-                src="/lovable-uploads/abe0ab82-c6f3-4d09-8f12-261b890d38ac.png"
-                alt="H.F.E Caldeiraria - Logo"
-                className="h-12 w-auto object-contain filter brightness-0 invert"
-              />
+              <div className="bg-white p-2 rounded-lg">
+                <img
+                  src="/lovable-uploads/abe0ab82-c6f3-4d09-8f12-261b890d38ac.png"
+                  alt="H.F.E Caldeiraria - Logo"
+                  className="h-10 w-auto object-contain"
+                />
+              </div>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               Soluções em caldeiraria e manutenção industrial com tradição, experiência e inovação.
