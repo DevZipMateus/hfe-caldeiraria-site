@@ -28,8 +28,8 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Endereço",
-      value: "SP-308, KM 181 - Charqueada, Piracicaba",
-      link: "https://maps.google.com/?q=SP-308,+KM+181+-+Charqueada,+Piracicaba",
+      value: "SP-308, KM 181 - Charqueada, Piracicaba - SP, 13433-899",
+      link: "https://www.google.com/maps/search/SP-308,+KM+181+-+Charqueada,+Piracicaba+-+SP,+13433-899",
       description: "Como chegar"
     },
     {
@@ -137,26 +137,26 @@ const Contact = () => {
             {/* Right - Map */}
             <div className="bg-card border border-border rounded-xl overflow-hidden shadow-soft">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.234567890123!2d-47.71234567890123!3d-22.71234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQyJzQ0LjQiUyA0N8KwNDInNDQuNCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.8234567890123!2d-47.71234567890123!3d-22.71234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sSP-308%2C%20KM%20181%20-%20Charqueada%2C%20Piracicaba%20-%20SP%2C%2013433-899!5e0!3m2!1spt-BR!2sbr!4v1734567890123&q=SP-308,+KM+181+-+Charqueada,+Piracicaba+-+SP,+13433-899"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Localização H.F.E Caldeiraria"
+                title="Localização H.F.E Caldeiraria - SP-308, KM 181, Charqueada, Piracicaba"
               />
               <div className="p-6">
                 <h4 className="text-lg font-semibold text-foreground mb-2">
                   Nossa Localização
                 </h4>
                 <p className="text-muted-foreground mb-4">
-                  SP-308, KM 181 - Charqueada, Piracicaba
+                  SP-308, KM 181 - Charqueada, Piracicaba - SP, 13433-899
                 </p>
                 <Button 
                   variant="outline" 
                   className="w-full"
-                  onClick={() => window.open("https://share.google/akc1CPu3deiJScM2W", "_blank")}
+                  onClick={() => window.open("https://www.google.com/maps/search/SP-308,+KM+181+-+Charqueada,+Piracicaba+-+SP,+13433-899", "_blank")}
                 >
                   <MapPin className="mr-2 h-4 w-4" />
                   Ver no Google Maps

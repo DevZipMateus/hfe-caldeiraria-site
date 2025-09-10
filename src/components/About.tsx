@@ -118,7 +118,8 @@ const About = () => {
               <div>
                 <h4 className="text-lg font-semibold text-foreground mb-2">Localização</h4>
                 <p className="text-muted-foreground">SP-308, KM 181</p>
-                <p className="text-muted-foreground">Charqueada, Piracicaba</p>
+                <p className="text-muted-foreground">Charqueada, Piracicaba - SP</p>
+                <p className="text-muted-foreground">13433-899</p>
               </div>
             </div>
           </div>

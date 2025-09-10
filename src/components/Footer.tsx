@@ -41,14 +41,15 @@ const Footer = () => {
                 hfecaldeiraria@gmail.com
               </a>
               <a 
-                href="https://maps.google.com/?q=SP-308,+KM+181+-+Charqueada,+Piracicaba"
+                href="https://www.google.com/maps/search/SP-308,+KM+181+-+Charqueada,+Piracicaba+-+SP,+13433-899"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-start text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
               >
                 <MapPin className="w-4 h-4 mr-3 mt-0.5 flex-shrink-0" />
                 SP-308, KM 181<br />
-                Charqueada, Piracicaba
+                Charqueada, Piracicaba - SP<br />
+                13433-899
               </a>
             </div>
           </div>
