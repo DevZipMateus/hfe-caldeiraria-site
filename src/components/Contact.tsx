@@ -137,7 +137,7 @@ const Contact = () => {
             {/* Right - Map */}
             <div className="bg-card border border-border rounded-xl overflow-hidden shadow-soft">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.8234567890123!2d-47.71234567890123!3d-22.71234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sSP-308%2C%20KM%20181%20-%20Charqueada%2C%20Piracicaba%20-%20SP%2C%2013433-899!5e0!3m2!1spt-BR!2sbr!4v1734567890123&q=SP-308,+KM+181+-+Charqueada,+Piracicaba+-+SP,+13433-899"
+                src="https://www.google.com/maps?q=SP-308,+KM+181,+Charqueada,+Piracicaba,+SP,+13433-899&output=embed"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
