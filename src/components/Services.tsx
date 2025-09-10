@@ -31,44 +31,44 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-gradient-subtle">
-      <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
+    <section id="services" className="py-16 sm:py-20 lg:py-24 bg-gradient-subtle">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+          <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+            <div className="inline-flex items-center bg-primary/10 text-primary px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium mb-4 sm:mb-6">
               Nossos Serviços
             </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4 sm:mb-6 px-4 sm:px-0">
               Especialidades em <span className="text-primary">Caldeiraria</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed px-4 sm:px-0">
               Oferecemos soluções completas em soldagem industrial com tecnologia avançada e equipe especializada
             </p>
           </div>
 
           {/* Services Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16 lg:mb-20">
             {services.map((service, index) => (
               <div 
                 key={index}
-                className="bg-card border border-border rounded-xl p-8 shadow-soft hover:shadow-elegant transition-all duration-300 group"
+                className="bg-card border border-border rounded-xl p-6 sm:p-8 shadow-soft hover:shadow-elegant transition-all duration-300 group"
               >
-                <div className="bg-primary/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-300">
-                  <service.icon className="w-8 h-8 text-primary" />
+                <div className="bg-primary/10 w-12 h-12 sm:w-16 sm:h-16 rounded-xl flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-primary/20 transition-colors duration-300">
+                  <service.icon className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
                 </div>
                 
-                <h3 className="text-xl font-heading font-bold text-foreground mb-4">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-heading font-bold text-foreground mb-3 sm:mb-4">
                   {service.title}
                 </h3>
                 
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 leading-relaxed">
                   {service.description}
                 </p>
                 
-                <ul className="space-y-2 mb-6">
+                <ul className="space-y-2 mb-4 sm:mb-6">
                   {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center text-sm text-muted-foreground">
+                    <li key={featureIndex} className="flex items-center text-xs sm:text-sm text-muted-foreground">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0" />
                       {feature}
                     </li>
@@ -77,7 +77,7 @@ const Services = () => {
                 
                 <Button 
                   variant="outline" 
-                  className="w-full group"
+                  className="w-full group text-sm sm:text-base"
                   onClick={() => scrollToSection("contact")}
                 >
                   Solicitar Orçamento
@@ -88,25 +88,26 @@ const Services = () => {
           </div>
 
           {/* Call to Action */}
-          <div className="bg-primary text-primary-foreground rounded-xl p-8 md:p-12 text-center">
-            <h3 className="text-2xl md:text-3xl font-heading font-bold mb-4">
+          <div className="bg-primary text-primary-foreground rounded-xl p-6 sm:p-8 md:p-12 text-center">
+            <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-heading font-bold mb-3 sm:mb-4">
               Precisa de um Orçamento Personalizado?
             </h3>
-            <p className="text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base lg:text-lg text-primary-foreground/90 mb-6 sm:mb-8 max-w-3xl mx-auto px-4 sm:px-0">
               Nossa equipe técnica está pronta para avaliar seu projeto e oferecer a melhor solução em caldeiraria e manutenção industrial.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Button 
                 variant="secondary" 
                 size="lg"
                 onClick={() => scrollToSection("contact")}
+                className="w-full sm:w-auto"
               >
                 Falar com Especialista
               </Button>
               <Button 
                 variant="outline" 
                 size="lg"
-                className="bg-transparent border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10"
+                className="w-full sm:w-auto bg-transparent border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10"
                 onClick={() => window.open("https://wa.me/5519998373476", "_blank")}
               >
                 WhatsApp Direto
