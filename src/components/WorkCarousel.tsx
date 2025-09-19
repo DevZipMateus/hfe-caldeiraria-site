@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
+import { Card, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import type { CarouselApi } from "@/components/ui/carousel";
 
 const WorkCarousel = () => {
   const [api, setApi] = useState<CarouselApi>();
-  const [current, setCurrent] = useState(0);
 
   const images = [
     {
@@ -40,22 +40,13 @@ const WorkCarousel = () => {
   useEffect(() => {
     if (!api) return;
 
-    // Auto-advance every 3 seconds
+    // Auto-advance every 3 seconds without pausing on hover
     const interval = setInterval(() => {
       api.scrollNext();
     }, 3000);
 
-    // Update current slide
-    const updateCurrent = () => {
-      setCurrent(api.selectedScrollSnap());
-    };
-
-    api.on("select", updateCurrent);
-    updateCurrent();
-
     return () => {
       clearInterval(interval);
-      api.off("select", updateCurrent);
     };
   }, [api]);
 
@@ -71,50 +62,36 @@ const WorkCarousel = () => {
           </p>
         </div>
 
-        <div className="relative max-w-4xl mx-auto">
+        <div className="flex justify-center">
           <Carousel
             setApi={setApi}
-            className="w-full"
             opts={{
               align: "start",
               loop: true,
             }}
+            className="w-full max-w-5xl"
           >
             <CarouselContent>
               {images.map((image, index) => (
-                <CarouselItem key={index}>
-                  <div className="relative aspect-[4/3] sm:aspect-video overflow-hidden rounded-lg bg-muted/50">
-                    <img
-                      src={image.src}
-                      alt={image.alt}
-                      className="w-full h-full object-contain transition-transform duration-700 hover:scale-105"
-                      loading={index === 0 ? "eager" : "lazy"}
-                      style={{ backgroundColor: 'hsl(var(--muted))' }}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none" />
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-1">
+                    <Card>
+                      <CardContent className="flex aspect-square items-center justify-center p-0 overflow-hidden">
+                        <img
+                          src={image.src}
+                          alt={image.alt}
+                          className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                          loading={index < 3 ? "eager" : "lazy"}
+                        />
+                      </CardContent>
+                    </Card>
                   </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="hidden sm:flex -left-4 lg:-left-12" />
-            <CarouselNext className="hidden sm:flex -right-4 lg:-right-12" />
+            <CarouselPrevious />
+            <CarouselNext />
           </Carousel>
-
-          {/* Indicators */}
-          <div className="flex justify-center mt-6 space-x-2">
-            {images.map((_, index) => (
-              <button
-                key={index}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  index === current 
-                    ? "bg-primary w-8" 
-                    : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
-                }`}
-                onClick={() => api?.scrollTo(index)}
-                aria-label={`Ir para imagem ${index + 1}`}
-              />
-            ))}
-          </div>
         </div>
       </div>
     </section>
