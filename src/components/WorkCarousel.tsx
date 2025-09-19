@@ -83,14 +83,15 @@ const WorkCarousel = () => {
             <CarouselContent>
               {images.map((image, index) => (
                 <CarouselItem key={index}>
-                  <div className="relative aspect-video overflow-hidden rounded-lg bg-muted">
+                  <div className="relative aspect-[4/3] sm:aspect-video overflow-hidden rounded-lg bg-muted/50">
                     <img
                       src={image.src}
                       alt={image.alt}
-                      className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                      className="w-full h-full object-contain transition-transform duration-700 hover:scale-105"
                       loading={index === 0 ? "eager" : "lazy"}
+                      style={{ backgroundColor: 'hsl(var(--muted))' }}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none" />
                   </div>
                 </CarouselItem>
               ))}
