@@ -20,10 +20,17 @@ const Contact = () => {
     },
     {
       icon: Mail,
-      title: "E-mail",
-      value: "hfecaldeiraria@gmail.com",
-      link: "mailto:hfecaldeiraria@gmail.com",
-      description: "Envie uma mensagem"
+      title: "E-mail Contato",
+      value: "contato@hfecaldeiraria.com.br",
+      link: "mailto:contato@hfecaldeiraria.com.br",
+      description: "Contato geral"
+    },
+    {
+      icon: Mail,
+      title: "E-mail Orçamento",
+      value: "orçamento@hfecaldeiraria.com.br",
+      link: "mailto:orçamento@hfecaldeiraria.com.br",
+      description: "Solicitar orçamento"
     },
     {
       icon: MapPin,
@@ -126,10 +133,10 @@ const Contact = () => {
                   variant="outline" 
                   size="lg" 
                   className="w-full justify-start text-sm sm:text-base"
-                  onClick={() => window.open("mailto:hfecaldeiraria@gmail.com", "_blank")}
+                  onClick={() => window.open("mailto:orçamento@hfecaldeiraria.com.br", "_blank")}
                 >
                   <Mail className="mr-3 h-4 w-4 sm:h-5 sm:w-5" />
-                  Enviar E-mail
+                  Solicitar Orçamento por E-mail
                 </Button>
               </div>
             </div>

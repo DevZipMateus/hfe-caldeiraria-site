@@ -36,11 +36,18 @@ const Footer = () => {
                 (19) 99837-3476
               </a>
               <a 
-                href="mailto:hfecaldeiraria@gmail.com"
+                href="mailto:contato@hfecaldeiraria.com.br"
                 className="flex items-center text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm break-all"
               >
                 <Mail className="w-3 h-3 sm:w-4 sm:h-4 mr-2 sm:mr-3 flex-shrink-0" />
-                hfecaldeiraria@gmail.com
+                contato@hfecaldeiraria.com.br
+              </a>
+              <a 
+                href="mailto:orçamento@hfecaldeiraria.com.br"
+                className="flex items-center text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm break-all"
+              >
+                <Mail className="w-3 h-3 sm:w-4 sm:h-4 mr-2 sm:mr-3 flex-shrink-0" />
+                orçamento@hfecaldeiraria.com.br
               </a>
               <a 
                 href="https://www.google.com/maps/search/SP-308,+KM+181+-+Charqueada,+Piracicaba+-+SP,+13433-899"
