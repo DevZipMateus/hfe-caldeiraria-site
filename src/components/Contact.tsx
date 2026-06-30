@@ -7,8 +7,8 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Telefone",
-      value: "(19) 99837-3476",
-      link: "tel:+5519998373476",
+      value: "(19) 3490-0285",
+      link: "tel:+551934900285",
       description: "Ligue para nós"
     },
     {
@@ -35,14 +35,14 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Endereço",
-      value: "SP-308, KM 181 - Charqueada, Piracicaba - SP, 13433-899",
-      link: "https://www.google.com/maps/search/SP-308,+KM+181+-+Charqueada,+Piracicaba+-+SP,+13433-899",
+      value: "Rua Antônio Degaspari, Nº 1746 - Condomínio Uninorte II, CEP: 13.413-652, Água Santa, Piracicaba - SP",
+      link: "https://www.google.com/maps/search/Rua+Antônio+Degaspari,+1746,+Piracicaba,+SP",
       description: "Como chegar"
     },
     {
       icon: Clock,
       title: "Horário",
-      value: "Seg à Sex: 07:00 às 17:00",
+      value: "Seg a Qui: 07:00–17:00 | Sex: 07:00–16:00",
       link: null,
       description: "Horário de funcionamento"
     }
@@ -123,7 +123,7 @@ const Contact = () => {
                   variant="outline" 
                   size="lg" 
                   className="w-full justify-start text-sm sm:text-base"
-                  onClick={() => window.open("tel:+5519998373476", "_blank")}
+                  onClick={() => window.open("tel:+551934900285", "_blank")}
                 >
                   <Phone className="mr-3 h-4 w-4 sm:h-5 sm:w-5" />
                   Ligar Agora
@@ -144,14 +144,14 @@ const Contact = () => {
             {/* Right - Map */}
             <div className="bg-card border border-border rounded-xl overflow-hidden shadow-soft">
               <iframe
-                src="https://www.google.com/maps?q=SP-308,+KM+181,+Charqueada,+Piracicaba,+SP,+13433-899&output=embed"
+                src="https://www.google.com/maps?q=Rua+Antônio+Degaspari,+1746,+Piracicaba,+SP&output=embed"
                 width="100%"
                 height="350"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Localização H.F.E Caldeiraria - SP-308, KM 181, Charqueada, Piracicaba"
+                title="Localização H.F.E Caldeiraria - Rua Antônio Degaspari, 1746, Piracicaba"
                 className="sm:h-[400px] lg:h-[450px]"
               />
               <div className="p-4 sm:p-6">
@@ -159,12 +159,12 @@ const Contact = () => {
                   Nossa Localização
                 </h4>
                 <p className="text-sm sm:text-base text-muted-foreground mb-4">
-                  SP-308, KM 181 - Charqueada, Piracicaba - SP, 13433-899
+                  Rua Antônio Degaspari, Nº 1746 - Condomínio Uninorte II, CEP: 13.413-652, Água Santa, Piracicaba - SP
                 </p>
                 <Button 
                   variant="outline" 
                   className="w-full text-sm sm:text-base"
-                  onClick={() => window.open("https://www.google.com/maps/search/SP-308,+KM+181+-+Charqueada,+Piracicaba+-+SP,+13433-899", "_blank")}
+                  onClick={() => window.open("https://www.google.com/maps/search/Rua+Antônio+Degaspari,+1746,+Piracicaba,+SP", "_blank")}
                 >
                   <MapPin className="mr-2 h-4 w-4" />
                   Ver no Google Maps

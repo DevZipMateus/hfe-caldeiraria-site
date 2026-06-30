@@ -113,14 +113,14 @@ const About = () => {
               </div>
               <div>
                 <h4 className="text-base sm:text-lg font-semibold text-foreground mb-2">Horário de Funcionamento</h4>
-                <p className="text-sm sm:text-base text-muted-foreground">Segunda a Sexta-feira</p>
-                <p className="text-sm sm:text-base text-muted-foreground">07:00 às 17:00 horas</p>
+                <p className="text-sm sm:text-base text-muted-foreground">Seg a Qui: 07:00 às 17:00</p>
+                <p className="text-sm sm:text-base text-muted-foreground">Sex: 07:00 às 16:00</p>
               </div>
               <div className="sm:col-span-2 lg:col-span-1">
                 <h4 className="text-base sm:text-lg font-semibold text-foreground mb-2">Localização</h4>
-                <p className="text-sm sm:text-base text-muted-foreground">SP-308, KM 181</p>
-                <p className="text-sm sm:text-base text-muted-foreground">Charqueada, Piracicaba - SP</p>
-                <p className="text-sm sm:text-base text-muted-foreground">13433-899</p>
+                <p className="text-sm sm:text-base text-muted-foreground">Rua Antônio Degaspari, Nº 1746</p>
+                <p className="text-sm sm:text-base text-muted-foreground">Condomínio Uninorte II - Água Santa</p>
+                <p className="text-sm sm:text-base text-muted-foreground">Piracicaba - SP, CEP: 13.413-652</p>
               </div>
             </div>
           </div>

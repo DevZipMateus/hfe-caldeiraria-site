@@ -28,7 +28,14 @@ const Footer = () => {
           <div>
             <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Contato</h3>
             <div className="space-y-2 sm:space-y-3">
-              <a 
+              <a
+                href="tel:+551934900285"
+                className="flex items-center text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm"
+              >
+                <Phone className="w-3 h-3 sm:w-4 sm:h-4 mr-2 sm:mr-3 flex-shrink-0" />
+                (19) 3490-0285
+              </a>
+              <a
                 href="tel:+5519998373476"
                 className="flex items-center text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm"
               >
@@ -49,17 +56,17 @@ const Footer = () => {
                 <Mail className="w-3 h-3 sm:w-4 sm:h-4 mr-2 sm:mr-3 flex-shrink-0" />
                 orçamento@hfecaldeiraria.com.br
               </a>
-              <a 
-                href="https://www.google.com/maps/search/SP-308,+KM+181+-+Charqueada,+Piracicaba+-+SP,+13433-899"
+              <a
+                href="https://www.google.com/maps/search/Rua+Antônio+Degaspari,+1746,+Piracicaba,+SP"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-start text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm"
               >
                 <MapPin className="w-3 h-3 sm:w-4 sm:h-4 mr-2 sm:mr-3 mt-0.5 flex-shrink-0" />
                 <div>
-                  <div>SP-308, KM 181</div>
-                  <div>Charqueada, Piracicaba - SP</div>
-                  <div>13433-899</div>
+                  <div>Rua Antônio Degaspari, Nº 1746</div>
+                  <div>Condomínio Uninorte II - Água Santa</div>
+                  <div>Piracicaba - SP, CEP: 13.413-652</div>
                 </div>
               </a>
             </div>
@@ -71,8 +78,8 @@ const Footer = () => {
             <div className="flex items-start text-primary-foreground/80 text-xs sm:text-sm">
               <Clock className="w-3 h-3 sm:w-4 sm:h-4 mr-2 sm:mr-3 mt-0.5 flex-shrink-0" />
               <div>
-                <p>Segunda a Sexta-feira</p>
-                <p>07:00 às 17:00 horas</p>
+                <p>Seg a Qui: 07:00 às 17:00</p>
+                <p>Sex: 07:00 às 16:00</p>
               </div>
             </div>
           </div>

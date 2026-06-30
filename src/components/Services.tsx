@@ -75,10 +75,10 @@ const Services = () => {
                   ))}
                 </ul>
                 
-                <Button 
-                  variant="outline" 
+                <Button
+                  variant="outline"
                   className="w-full group text-sm sm:text-base"
-                  onClick={() => scrollToSection("contact")}
+                  onClick={() => window.open("https://wa.me/5519998373476", "_blank")}
                 >
                   Solicitar Orçamento
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -96,10 +96,10 @@ const Services = () => {
               Nossa equipe técnica está pronta para avaliar seu projeto e oferecer a melhor solução em caldeiraria e manutenção industrial.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-              <Button 
-                variant="secondary" 
+              <Button
+                variant="secondary"
                 size="lg"
-                onClick={() => scrollToSection("contact")}
+                onClick={() => window.open("https://wa.me/5519998373476", "_blank")}
                 className="w-full sm:w-auto"
               >
                 Falar com Especialista

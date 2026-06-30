@@ -43,7 +43,7 @@ const Hero = () => {
             <Button
               variant="outline"
               size="lg"
-              onClick={() => scrollToSection("contact")}
+              onClick={() => window.open("https://wa.me/5519998373476", "_blank")}
               className="w-full sm:w-auto"
             >
               Solicitar Orçamento

@@ -67,7 +67,7 @@ const Header = () => {
             </button>
             <Button
               variant="primary"
-              onClick={() => scrollToSection("contact")}
+              onClick={() => window.open("https://wa.me/5519998373476", "_blank")}
               className="ml-4 text-sm xl:text-base px-4 xl:px-6"
             >
               Solicitar Orçamento
@@ -116,7 +116,7 @@ const Header = () => {
               <div className="px-4 pt-2">
                 <Button
                   variant="primary"
-                  onClick={() => scrollToSection("contact")}
+                  onClick={() => window.open("https://wa.me/5519998373476", "_blank")}
                   className="w-full"
                 >
                   Solicitar Orçamento
